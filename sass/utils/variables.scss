@@ -1,0 +1,19 @@
+$base-fonts: 'Roboto', sans-serif;
+$logo-fonts: 'Raleway', sans-serif;
+
+$hover-effect: cubic-bezier(0.4, 0, 0.2, 1);
+$hover-duration: 250ms;
+$header-border: 1px;
+$base-space: 30px;
+
+$colors: (
+  'text': #757575,
+  'title': #212121,
+  'btnhover-text': #ffffff,
+  'btnhover-bg': #188ce8,
+  'accent': #2196f3,
+  'firstbg': #ffffff,
+  'secondbg': #f5f4fa,
+  'svgbase': #afb1b8,
+  'svgcontent': #ffffff,
+);

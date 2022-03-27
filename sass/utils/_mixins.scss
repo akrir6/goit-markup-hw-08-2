@@ -1,0 +1,36 @@
+@mixin bgimg($url) {
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url($url);
+}
+
+@mixin list-gap($gap: $base-space, $direction-vertical: false) {
+  @if $direction-vertical {
+    & + & {
+      margin-top: $gap;
+    }
+  } @else {
+    & + & {
+      margin-left: $gap;
+    }
+  }
+}
+
+@mixin flex-centered($justify-content: center, $align-items: center) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+@mixin flex-list-container($gap: $base-space) {
+  display: flex;
+  // justify-content: center;
+  flex-wrap: wrap;
+  margin-top: -1 * $gap;
+  margin-left: -1 * $gap;
+}
+
+@mixin flex-list($columns, $gap: $base-space) {
+  flex-basis: calc((100% - #{$columns} * #{$gap}) / #{$columns});
+  margin-top: $gap;
+  margin-left: $gap;
+}

@@ -1,0 +1,18 @@
+.header {
+  border-bottom: $header-border solid #ececec;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.header__navigation {
+  @media screen and (min-width: 768px) {
+    margin-left: 88px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
+}

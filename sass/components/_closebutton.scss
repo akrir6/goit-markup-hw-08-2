@@ -1,0 +1,22 @@
+.close-button {
+  @include flex-centered;
+  width: 30px;
+  height: 30px;
+  background-color: get-color(firstbg);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.close-button__icon {
+  width: 18px;
+  height: 18px;
+  fill: #000000;
+  transition: anim-base(fill);
+
+  .close-button:hover &,
+  .close-button:focus & {
+    fill: get-color(accent);
+  }
+}

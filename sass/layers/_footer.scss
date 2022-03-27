@@ -1,0 +1,37 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2f303a;
+}
+
+.footer__address {
+  margin-top: 20px;
+}
+
+.footer__section {
+  color: #ffffff;
+  word-wrap: break-word;
+
+  @media screen and (max-width: 767px) {
+    @include list-gap(60px, true);
+  }
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+    &:last-child {
+      margin-top: 60px;
+    }
+  }
+}
+
+.footer__title {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  // color: #ffffff;
+}

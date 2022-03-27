@@ -1,0 +1,41 @@
+.client {
+  @include flex-list-container;
+}
+.client__item {
+  height: 92px;
+
+  @include flex-list(2);
+
+  @media screen and (min-width: 768px) {
+    @include flex-list(3);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include flex-list(6);
+  }
+}
+
+.client__link {
+  @include flex-centered;
+  width: 100%;
+  height: 100%;
+
+  color: get-color(svgbase);
+  border: 1px solid get-color(svgbase);
+  border-radius: 4px;
+
+  transition: anim-base(color), anim-base(border-color);
+
+  &:hover,
+  &:focus {
+    color: get-color(accent);
+    border-color: get-color(accent);
+  }
+}
+
+.client__logo {
+  width: 106px;
+  height: 60px;
+
+  fill: currentColor;
+}

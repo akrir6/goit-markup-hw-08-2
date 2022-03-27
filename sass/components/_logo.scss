@@ -1,0 +1,21 @@
+.logo {
+  font-family: $logo-fonts;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: get-color(accent);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+
+  &--lightbg {
+    color: #000000;
+  }
+
+  &--darkbg {
+    color: #ffffff;
+  }
+}

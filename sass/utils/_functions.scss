@@ -1,0 +1,7 @@
+@function get-color($key) {
+  @return map-get($colors, $key);
+}
+
+@function anim-base($property) {
+  @return $property $hover-duration $hover-effect;
+}
