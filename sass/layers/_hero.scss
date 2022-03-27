@@ -3,23 +3,23 @@
   padding-top: 118px;
   padding-bottom: 118px;
   background-color: #2f303a;
-  @include bgimg('../../images/bg-mobile.jpg');
+  @include bgimg('../images/bg-mobile.jpg');
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    @include bgimg('../../images/bg-mobile@2x.jpg');
+    @include bgimg('../images/bg-mobile@2x.jpg');
   }
   @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
-    @include bgimg('../../images/bg-mobile@3x.jpg');
+    @include bgimg('../images/bg-mobile@3x.jpg');
   }
 
   @media screen and (min-width: 768px) {
-    @include bgimg('../../images/bg-tablet.jpg');
+    @include bgimg('../images/bg-tablet.jpg');
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      @include bgimg('../../images/bg-tablet@2x.jpg');
+      @include bgimg('../images/bg-tablet@2x.jpg');
     }
     @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
-      @include bgimg('../../images/bg-tablet@3x.jpg');
+      @include bgimg('../images/bg-tablet@3x.jpg');
     }
   }
 
