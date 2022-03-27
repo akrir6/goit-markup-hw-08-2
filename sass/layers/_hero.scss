@@ -26,13 +26,13 @@
   @media screen and (min-width: 1200px) {
     padding-top: 200px;
     padding-bottom: 200px;
-    @include bgimg('../../images/bg-desktop.jpg');
+    @include bgimg('../images/bg-desktop.jpg');
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      @include bgimg('../../images/bg-desktop@2x.jpg');
+      @include bgimg('../images/bg-desktop@2x.jpg');
     }
     @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
-      @include bgimg('../../images/bg-desktop@3x.jpg');
+      @include bgimg('../images/bg-desktop@3x.jpg');
     }
   }
 
