@@ -882,6 +882,26 @@ img {
     fill: currentColor;
   }
 }
+.contact__icon--phonesize {
+  width: 10px;
+  height: 14px;
+}
+@media screen and (min-width: 1200px) {
+  .contact__icon--phonesize {
+    width: 10px;
+    height: 16px;
+  }
+}
+.contact__icon--mailsize {
+  width: 14px;
+  height: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .contact__icon--mailsize {
+    width: 16px;
+    height: 12px;
+  }
+}
 
 .footer-contact__item + .footer-contact__item {
   margin-top: 9px;

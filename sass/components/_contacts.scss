@@ -76,6 +76,24 @@
     margin-right: 10px;
     fill: currentColor;
   }
+
+  &--phonesize {
+    width: 10px;
+    height: 14px;
+    @media screen and (min-width: 1200px) {
+      width: 10px;
+      height: 16px;
+    }
+  }
+
+  &--mailsize {
+    width: 14px;
+    height: 10px;
+    @media screen and (min-width: 1200px) {
+      width: 16px;
+      height: 12px;
+    }
+  }
 }
 
 //footer
