@@ -14,13 +14,7 @@
           Web<span class="logo--lightbg">Studio</span>
         </a>
 
-        <button type="button" class="menu-button" data-menu-button>
-          <svg width="40px" height="40px">
-            <use href="./images/icons.svg#mobile-menu-burger"></use>
-          </svg>
-        </button>
-
-        <div class="mobile-menu" data-menu>
+        <div class="mobile-menu header__mobile-menu" data-menu>
           <button type="button" class="menu-button menu-button--close" data-menu-button-close>
             <svg width="40px" height="40px">
               <use href="./images/icons.svg#mobile-menu-close"></use>
@@ -77,6 +71,12 @@
             </li>
           </ul>
         </div>
+
+        <button type="button" class="menu-button" data-menu-button>
+          <svg width="40px" height="40px">
+            <use href="./images/icons.svg#mobile-menu-burger"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -173,6 +173,7 @@
                 alt="Дизайнерские решения"
                 width="370"
               />
+
               <p class="activity__label">Дизайнерские решения</p>
             </li>
           </ul>
@@ -192,27 +193,34 @@
                       ./images/idemianenko-desktop@2x.jpg 2x,
                       ./images/idemianenko-desktop@3x.jpg 3x
                     "
-                    media="(min-width:1200px)" />
+                    media="(min-width:1200px)"
+                  />
                   <source
                     srcset="
                       ./images/idemianenko-tablet.jpg    1x,
                       ./images/idemianenko-tablet@2x.jpg 2x,
                       ./images/idemianenko-tablet@3x.jpg 3x
                     "
-                    media="(min-width:768px)" />
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/idemianenko-mobile.webp    1x,
+                      ./images/idemianenko-mobile@2x.webp 2x,
+                      ./images/idemianenko-mobile@3x.webp 3x
+                    "
+                    media="(max-width:767px)"
+                  />
                   <source
                     srcset="
                       ./images/idemianenko-mobile.jpg    1x,
                       ./images/idemianenko-mobile@2x.jpg 2x,
                       ./images/idemianenko-mobile@3x.jpg 3x
                     "
-                    media="(max-width:767px)" />
-                  <img
-                    src="./images/idemianenko-mobile.jpg"
-                    alt="Игорь Демьяненко"
-                    width="100%"
-                    height="100%"
-                /></picture>
+                    media="(max-width:767px)"
+                  />
+                  <img src="./images/idemianenko-mobile.jpg" alt="Игорь Демьяненко" />
+                </picture>
               </div>
               <div class="team__card">
                 <h3 class="team__name">Игорь Демьяненко</h3>
@@ -268,12 +276,19 @@
                     media="(min-width:768px)" />
                   <source
                     srcset="
+                      ./images/orepina-mobile.webp    1x,
+                      ./images/orepina-mobile@2x.webp 2x,
+                      ./images/orepina-mobile@3x.webp 3x
+                    "
+                    media="(max-width:767px)" />
+                  <source
+                    srcset="
                       ./images/orepina-mobile.jpg    1x,
                       ./images/orepina-mobile@2x.jpg 2x,
                       ./images/orepina-mobile@3x.jpg 3x
                     "
                     media="(max-width:767px)" />
-                  <img src="./images/orepina-mobile.jpg" alt="Ольга Репина" width="100%"
+                  <img src="./images/orepina-mobile.jpg" alt="Ольга Репина"
                 /></picture>
               </div>
               <div class="team__card">
@@ -320,23 +335,34 @@
                       ./images/mtarasov-desktop@2x.jpg 2x,
                       ./images/mtarasov-desktop@3x.jpg 3x
                     "
-                    media="(min-width:1200px)" />
+                    media="(min-width:1200px)"
+                  />
                   <source
                     srcset="
                       ./images/mtarasov-tablet.jpg    1x,
                       ./images/mtarasov-tablet@2x.jpg 2x,
                       ./images/mtarasov-tablet@3x.jpg 3x
                     "
-                    media="(min-width:768px)" />
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mtarasov-mobile.webp    1x,
+                      ./images/mtarasov-mobile@2x.webp 2x,
+                      ./images/mtarasov-mobile@3x.webp 3x
+                    "
+                    media="(max-width:767px)"
+                  />
                   <source
                     srcset="
                       ./images/mtarasov-mobile.jpg    1x,
                       ./images/mtarasov-mobile@2x.jpg 2x,
                       ./images/mtarasov-mobile@3x.jpg 3x
                     "
-                    media="(max-width:767px)" />
-                  <img src="./images/mtarasov-mobile.jpg" alt="Николай Тарасов" width="100%"
-                /></picture>
+                    media="(max-width:767px)"
+                  />
+                  <img src="./images/mtarasov-mobile.jpg" alt="Николай Тарасов" />
+                </picture>
               </div>
               <div class="team__card">
                 <h3 class="team__name">Николай Тарасов</h3>
@@ -392,12 +418,19 @@
                     media="(min-width:768px)" />
                   <source
                     srcset="
+                      ./images/myermakov-mobile.webp    1x,
+                      ./images/myermakov-mobile@2x.webp 2x,
+                      ./images/myermakov-mobile@3x.webp 3x
+                    "
+                    media="(max-width:767px)" />
+                  <source
+                    srcset="
                       ./images/myermakov-mobile.jpg    1x,
                       ./images/myermakov-mobile@2x.jpg 2x,
                       ./images/myermakov-mobile@3x.jpg 3x
                     "
                     media="(max-width:767px)" />
-                  <img src="./images/myermakov-mobile.jpg" alt="Михаил Ермаков" width="100%"
+                  <img src="./images/myermakov-mobile.jpg" alt="Михаил Ермаков"
                 /></picture>
               </div>
               <div class="team__card">
@@ -560,7 +593,12 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button data-modal-close type="button" class="close-button modal__close-button">
+        <button
+          data-modal-close
+          type="button"
+          class="close-button modal__close-button"
+          aria-label="Close modal button"
+        >
           <svg class="close-button__icon"><use href="./images/icons.svg#close"></use></svg>
         </button>
         <h2 class="modal__header">Оставьте свои данные, мы вам перезвоним</h2>

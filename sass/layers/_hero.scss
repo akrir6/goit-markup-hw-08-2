@@ -3,13 +3,13 @@
   padding-top: 118px;
   padding-bottom: 118px;
   background-color: #2f303a;
-  @include bgimg('../images/bg-mobile.jpg');
+  @include bgimg('../images/bg-mobile.webp');
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    @include bgimg('../images/bg-mobile@2x.jpg');
+    @include bgimg('../images/bg-mobile@2x.webp');
   }
   @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
-    @include bgimg('../images/bg-mobile@3x.jpg');
+    @include bgimg('../images/bg-mobile@3x.webp');
   }
 
   @media screen and (min-width: 481px) {
@@ -24,8 +24,6 @@
   }
 
   @media screen and (min-width: 781px) {
-    padding-top: 200px;
-    padding-bottom: 200px;
     @include bgimg('../images/bg-desktop.jpg');
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -34,6 +32,10 @@
     @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
       @include bgimg('../images/bg-desktop@3x.jpg');
     }
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 
   background-repeat: no-repeat;
