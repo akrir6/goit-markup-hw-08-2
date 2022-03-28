@@ -12,7 +12,7 @@
     @include bgimg('../images/bg-mobile@3x.jpg');
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 481px) {
     @include bgimg('../images/bg-tablet.jpg');
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -23,7 +23,7 @@
     }
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 781px) {
     padding-top: 200px;
     padding-bottom: 200px;
     @include bgimg('../images/bg-desktop.jpg');
